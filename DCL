@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class Demo05 {
+    public static void main(String[] args) throws Exception {
+        FileWriter f1 = new FileWriter("111-1.text");
+        FileReader f2 = new FileReader("111.text");
+        while (true) {
+            int read = f2.read();
+            if(read==-1){
+                break;
+            }else {
+                f1.write(read);
+            }
+        }
+        f1.close();
+        f2.close();
+        System.out.println("打印完毕！");
