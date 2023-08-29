@@ -8,8 +8,9 @@ public class Demo05 {
             int read = f2.read();
             if(read==-1){
                 break;
-            }else {
-                f1.write(read);
+            }else { 
+                f1.write(read); 
+
             }
         }
         f1.close();
