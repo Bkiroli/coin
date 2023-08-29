@@ -10,7 +10,6 @@ public class Demo05 {
                 break;
             }else { 
                 f1.write(read); 
-
             }
         }
         f1.close();
